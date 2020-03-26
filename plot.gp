@@ -16,8 +16,8 @@ set logscale y
 
 day_21_3 = 1584790922
 day = 3600 * 24
-Delta = day * 11
+Delta = day * 13
 
-set xrange [:day_21_3 + 30 * day]
+set xrange [:day_21_3 + 20 * day]
 plot 'germany.txt' using 1:2 title 'Deutschland',\
 18000 * 10**((x - day_21_3) / Delta) title "T_{10} = 10d"
