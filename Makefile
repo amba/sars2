@@ -1,5 +1,5 @@
 all:
 	./plot.gp
-	evince germany.pdf
+	evince germany.pdf &
 
 .PHONY: all

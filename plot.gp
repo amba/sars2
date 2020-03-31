@@ -25,3 +25,12 @@ set yrange [:100000]
 plot 'germany.txt' using 1:2 ps 2 pt 4 title 'Deutschland',\
      18000 * 10**((x - day_21_3) / Delta)\
      title sprintf("T_{10} = %d d, T_{2} = %.1f d", T10_days, T10_days * log(2)/log(10))
+
+
+unset xrange
+unset yrange
+unset logscale y
+plot 'germany-dead.txt' using 1:2 title 'Tote Deutschland'
+
+set logscale y
+plot 'germany-dead.txt' using 1:2 title 'Tote Deutschland'
